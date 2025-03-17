@@ -9,6 +9,7 @@ const Post = defineDocumentType(() => ({
   name: 'Post',
   filePathPattern: '**/*.{md,mdx}',
   contentType: 'mdx',
+  disableImportAliasWarning: true,
   fields: {
     title: {
       type: 'string',
