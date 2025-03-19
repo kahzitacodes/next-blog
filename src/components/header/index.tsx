@@ -1,9 +1,12 @@
+import { Logo } from '@/components/logo'
+
 import * as Style from './styles'
+
 export const Header = () => {
   return (
     <Style.Container>
       <Style.Content className="flex h-full w-full items-center justify-between bg-primary/50 px-4">
-        <div>logo</div>
+        <Logo />
 
         <Style.Nav>
           <Style.List>

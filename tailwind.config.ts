@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         primary: '#201f27',
         secondary: '#233038',
-        link: '#f72585'
+        link: '#EC656D'
       }
     }
   },

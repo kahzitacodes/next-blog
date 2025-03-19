@@ -9,8 +9,8 @@
     "lint": "next lint",
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "prepare": "husky",
-    "test": "jest --passWithNoTests --maxWorkers=50%",
-    "test:watch": "jest --watch --maxWorkers=25%",
+    "test": "jest --silent --passWithNoTests --maxWorkers=50%",
+    "test:watch": "jest --silent --watch --maxWorkers=25%",
     "test:ci": "jest --runInBand"
   },
   "dependencies": {

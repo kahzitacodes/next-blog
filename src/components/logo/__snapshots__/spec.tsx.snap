@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo should render successfully 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <img
+      alt="Logo"
+      data-nimg="1"
+      decoding="async"
+      height="21"
+      loading="lazy"
+      src="assets/images/logo.svg"
+      style="color: transparent;"
+      width="28"
+    />
+  </div>
+</div>
+`;
