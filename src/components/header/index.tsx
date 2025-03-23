@@ -1,21 +1,22 @@
 import { Logo } from '@/components/logo'
 
+import { HeaderProps } from './types'
+
 import * as Style from './styles'
 
-export const Header = () => {
+export const Header = ({ items }: HeaderProps) => {
   return (
     <Style.Container>
-      <Style.Content className="flex h-full w-full items-center justify-between bg-primary/50 px-4">
+      <Style.Content>
         <Logo />
 
         <Style.Nav>
           <Style.List>
-            <Style.ListItem>
-              <a href="/">Home</a>
-            </Style.ListItem>
-            <Style.ListItem>
-              <a href="/articles">Articles</a>
-            </Style.ListItem>
+            {items.mainNav.map((item) => (
+              <Style.ListItem key={item.title}>
+                <a href={item.href}>{item.title}</a>
+              </Style.ListItem>
+            ))}
           </Style.List>
         </Style.Nav>
       </Style.Content>

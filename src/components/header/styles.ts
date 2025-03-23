@@ -22,7 +22,7 @@ export const Content = tw.div`
   items-center
   justify-between
   bg-primary/50
-  px-4
+  px-6
 `
 
 export const Nav = tw.nav`
