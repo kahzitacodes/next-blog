@@ -8,7 +8,8 @@ export const Container = tw.header`
   w-full
   items-center
   bg-primary/50
-  shadow-md
+  border-b
+  border-gray-950/50
   backdrop-blur-md
   transition-all
   duration-300

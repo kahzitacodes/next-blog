@@ -1,8 +1,8 @@
 import { Logo } from '@/components/logo'
 
-import { HeaderProps } from './types'
+import { HeaderProps } from './Header.types'
 
-import * as Style from './styles'
+import * as Style from './Header.styles'
 
 export const Header = ({ items }: HeaderProps) => {
   return (
