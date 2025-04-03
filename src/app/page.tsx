@@ -1,12 +1,16 @@
+import { Grid, PostCard } from '@/components'
+import { allPosts } from 'contentlayer/generated'
+
 export default function Home() {
+  const posts = allPosts
+
   return (
-    <main className="flex min-h-screen flex-col py-24">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim itaque,
-        officiis consequatur minima perferendis ut tempora repellat, asperiores
-        esse dolor quod alias, debitis laboriosam earum rem dignissimos ratione?
-        Quisquam, a?
-      </p>
+    <main className="flex min-h-screen flex-col">
+      <Grid sm={{ cols: 2, gap: 6 }} lg={{ cols: 3, gap: 8 }}>
+        {posts.map((post) => (
+          <PostCard key={post._id} />
+        ))}
+      </Grid>
     </main>
   )
 }

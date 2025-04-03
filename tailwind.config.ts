@@ -6,6 +6,16 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
+  safelist: [
+    {
+      pattern: /^grid-cols-/,
+      variants: ['xs', 'sm', 'md', 'lg', 'xl', 'xxl']
+    },
+    {
+      pattern: /^gap-/,
+      variants: ['xs', 'sm', 'md', 'lg', 'xl', 'xxl']
+    }
+  ],
   theme: {
     extend: {
       colors: {
