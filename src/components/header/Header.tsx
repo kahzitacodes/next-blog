@@ -4,7 +4,7 @@ import { HeaderProps } from './Header.types'
 
 import * as Style from './Header.styles'
 
-export const Header = ({ items }: HeaderProps) => {
+export const Header = ({ navItems }: HeaderProps) => {
   return (
     <Style.Container>
       <Style.Content>
@@ -12,7 +12,7 @@ export const Header = ({ items }: HeaderProps) => {
 
         <Style.Nav>
           <Style.List>
-            {items.mainNav.map((item) => (
+            {navItems?.map((item) => (
               <Style.ListItem key={item.title}>
                 <a href={item.href}>{item.title}</a>
               </Style.ListItem>

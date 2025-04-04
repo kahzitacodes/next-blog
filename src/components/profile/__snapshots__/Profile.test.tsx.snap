@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Profile /> should render successfully 1`] = `
+<div
+  avatar="/assets/images/avatar.jpeg"
+  class="flex gap-6 flex-col items-center md:flex-row"
+  description="Lorem ipsum dolor sit amet."
+  name="Karine Pereira"
+>
+  <img
+    alt="profile image"
+    class="w-20 self-start rounded-full border-2 border-white md:self-center"
+    data-nimg="1"
+    decoding="async"
+    fetchpriority="high"
+    height="100"
+    src="/_next/image?url=%2Fassets%2Fimages%2Favatar.jpeg&w=256&q=75"
+    srcset="/_next/image?url=%2Fassets%2Fimages%2Favatar.jpeg&w=128&q=75 1x, /_next/image?url=%2Fassets%2Fimages%2Favatar.jpeg&w=256&q=75 2x"
+    style="color: transparent;"
+    title="profile image"
+    width="100"
+  />
+  <div
+    class="flex flex-col gap-1 justify-center"
+  >
+    <h1
+      class="text-3xl font-bold"
+    >
+      Karine Pereira
+    </h1>
+    <p
+      class="text-sm text-gray-300"
+    >
+      Lorem ipsum dolor sit amet.
+    </p>
+  </div>
+</div>
+`;

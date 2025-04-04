@@ -3,6 +3,4 @@ export type NavItem = {
   href: string
 }
 
-export type HeaderNavItems = {
-  mainNav: NavItem[]
-}
+export type HeaderNavItems = NavItem[]

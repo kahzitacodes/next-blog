@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-primary text-gray-100`}>
-        <Header items={headerConfig} />
+        <Header {...headerConfig} />
         <Container>
           <div className="py-24">{children}</div>
         </Container>

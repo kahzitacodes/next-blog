@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Profile /> should render successfully 1`] = `
+<header
+  class="fixed z-10 flex h-16 w-full items-center bg-primary/50 border-b border-gray-950/50 backdrop-blur-md transition-all duration-300 ease-out"
+>
+  <div
+    class="flex h-full w-full items-center justify-between bg-primary/50 px-6"
+  >
+    <div
+      class=""
+    >
+      <img
+        alt="Logo"
+        data-nimg="1"
+        decoding="async"
+        height="21"
+        loading="lazy"
+        src="assets/images/logo.svg"
+        style="color: transparent;"
+        width="28"
+      />
+    </div>
+    <nav
+      class="flex items-center justify-between"
+    >
+      <ul
+        class="flex gap-4"
+      >
+        <li
+          class="text-md transition-colors duration-300 ease-in-out hover:text-link"
+        >
+          <a
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          class="text-md transition-colors duration-300 ease-in-out hover:text-link"
+        >
+          <a
+            href="/articles"
+          >
+            Artigos
+          </a>
+        </li>
+        <li
+          class="text-md transition-colors duration-300 ease-in-out hover:text-link"
+        >
+          <a
+            href="/about"
+          >
+            Sobre mim
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+`;
