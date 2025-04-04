@@ -1,5 +1,6 @@
 export type StyleProps = {
   variant?: 'default'
+  onClick?: () => void
 }
 
 export type PropType = {

@@ -15,9 +15,10 @@ const config: Config = {
     '!src/types/**',
     '!src/styles/**',
     '!src/utils/**',
-    '!src/components/**/styles.ts',
+    '!src/components/**/*.styles.ts',
+    '!src/components/**/*.types.ts',
     '!src/components/index.ts',
-    '!src/components/**/index.ts(x)',
+    '!src/components/**/index.ts',
     '!src/components/mdx/**'
   ],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import * as S from './styles'
+import * as S from './Logo.styles'
 
 export const Logo = () => {
   return (

@@ -18,5 +18,8 @@ export const TagContainer = tw.span<StyleProps>`
   text-sm
   font-medium
   cursor-default
+  transition-all
+
   ${(props) => getVariant(props)}
+  ${({ onClick }) => onClick && 'cursor-pointer hover:bg-gray-400  text-gray-800'}
 `

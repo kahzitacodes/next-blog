@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -23,6 +24,8 @@ export const PostCard = () => {
         {['TS', 'React', 'Next.js'].map((tag) => (
           <Tag key={tag} label={tag} />
         ))}
+
+        <Tag onClick={() => console.log('hey')} label="link" />
       </S.TagsWrap>
 
       <S.Time>15 de maio de 2025 • 3 minutos de leitura</S.Time>

@@ -11,7 +11,8 @@
     "prepare": "husky",
     "test": "jest --silent --passWithNoTests --maxWorkers=50%",
     "test:watch": "jest --silent --watch --maxWorkers=25%",
-    "test:ci": "jest --runInBand"
+    "test:ci": "jest --runInBand",
+    "generate": "npx plop --plopfile generators/plopfile.js"
   },
   "dependencies": {
     "contentlayer": "^0.3.4",
