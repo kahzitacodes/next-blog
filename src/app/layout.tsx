@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
-import { Container, Header } from '@/components'
-import { headerConfig } from '@/config'
+import { navigationConfig } from '@/config'
+import { Container, Header, MainNav, Footer } from '@/components'
 
 import './globals.css'
 
@@ -21,10 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-primary text-gray-100`}>
-        <Header {...headerConfig} />
+        <Header>
+          <MainNav items={navigationConfig} />
+        </Header>
         <Container>
           <div className="py-24">{children}</div>
         </Container>
+        <Footer items={navigationConfig} />
       </body>
     </html>
   )

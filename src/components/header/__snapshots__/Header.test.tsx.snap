@@ -22,40 +22,75 @@ exports[`<Profile /> should render successfully 1`] = `
       />
     </div>
     <nav
-      class="flex items-center justify-between"
+      class="items-center justify-between hidden lg:flex"
     >
       <ul
-        class="flex gap-4"
+        class="flex gap-3"
       >
         <li
-          class="text-md transition-colors duration-300 ease-in-out hover:text-link"
+          class="flex gap-2 font-light text-medium relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
         >
           <a
+            class="flex justify-center gap-3"
             href="/"
           >
             Home
           </a>
         </li>
         <li
-          class="text-md transition-colors duration-300 ease-in-out hover:text-link"
+          class="flex gap-2 font-light text-medium relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
         >
           <a
-            href="/articles"
+            class="flex justify-center gap-3"
+            href="/about"
           >
-            Artigos
+            About
           </a>
         </li>
         <li
-          class="text-md transition-colors duration-300 ease-in-out hover:text-link"
+          class="flex gap-2 font-light text-medium relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
         >
           <a
-            href="/about"
+            class="flex justify-center gap-3"
+            href="/contact"
           >
-            Sobre mim
+            Contact
           </a>
         </li>
       </ul>
     </nav>
+    <div
+      class="flex z-50 lg:hidden"
+    >
+      <button
+        class="uflex transition-colors duration-300 hover:text-link"
+        title="Open menu"
+      >
+        <svg
+          class="lucide lucide-align-justify"
+          data-testid="icon-open"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3 12h18"
+          />
+          <path
+            d="M3 18h18"
+          />
+          <path
+            d="M3 6h18"
+          />
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
 `;

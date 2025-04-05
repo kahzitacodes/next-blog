@@ -1,3 +1,3 @@
 export type PropTypes = {
-  children: React.ReactNode
+  dataTestid?: string
 }

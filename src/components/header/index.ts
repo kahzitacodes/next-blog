@@ -1,2 +1,2 @@
 export * from './Header'
-export * as HeaderTypes from './Header.types'
+export type { PropTypes as HeaderTypes } from './Header.types'

@@ -1,6 +1,6 @@
-import { HeaderNavItems } from '@/types'
+import { NavItem } from '@/types'
 
-export const headerConfig: HeaderNavItems = [
+export const navigationConfig: NavItem[] = [
   {
     title: 'Home',
     href: '/'

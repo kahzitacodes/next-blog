@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MainNav /> should render successfully 1`] = `
+<nav
+  class="items-center justify-between hidden lg:flex"
+>
+  <ul
+    class="flex gap-3"
+  >
+    <li
+      class="flex gap-2 font-light text-medium relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
+    >
+      <a
+        class="flex justify-center gap-3"
+        href="/"
+      >
+        Home
+      </a>
+    </li>
+    <li
+      class="flex gap-2 font-light text-medium relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
+    >
+      <a
+        class="flex justify-center gap-3"
+        href="/about"
+      >
+        About
+      </a>
+    </li>
+    <li
+      class="flex gap-2 font-light text-medium relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
+    >
+      <a
+        class="flex justify-center gap-3"
+        href="/contact"
+      >
+        Contact
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Icon /> should render the correct icon 1`] = `
+<svg
+  class="lucide lucide-anchor"
+  data-testid="Anchor"
+  fill="none"
+  height="32"
+  stroke="currentColor"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  stroke-width="2"
+  viewBox="0 0 24 24"
+  width="32"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M12 22V8"
+  />
+  <path
+    d="M5 12H2a10 10 0 0 0 20 0h-3"
+  />
+  <circle
+    cx="12"
+    cy="5"
+    r="3"
+  />
+</svg>
+`;
