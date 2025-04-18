@@ -1,9 +1,9 @@
 import { Grid, PostCard, Profile } from '@/components'
-import { allPosts } from 'contentlayer/generated'
 import { siteConfig } from '@/config'
+import { PostService } from '@/services'
 
 export default function Home() {
-  const posts = allPosts
+  const { posts } = PostService.getAll()
 
   const profile = {
     name: siteConfig.name,
@@ -16,7 +16,7 @@ export default function Home() {
       <Profile {...profile} />
       <Grid sm={{ cols: 2, gap: 6 }} lg={{ cols: 3, gap: 8 }}>
         {posts.map((post) => (
-          <PostCard key={post._id} />
+          <PostCard key={post._id} {...post} />
         ))}
       </Grid>
     </main>

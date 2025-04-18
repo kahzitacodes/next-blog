@@ -1,43 +1,41 @@
 'use client'
-import Image from 'next/image'
-import Link from 'next/link'
 
+import { formatDate } from '@/utils/helpers'
 import { Tag } from '../tag'
 
+import { PropTypes } from './PostCard.types'
 import * as S from './PostCard.styles'
 
-export const PostCard = () => {
+export const PostCard: React.FC<PropTypes> = (props) => {
+  const {
+    readingTime,
+    slug,
+    frontMatter: { description, image, title, date, tags }
+  } = props
+
   return (
     <S.PostContainer>
-      <Link href="#">
-        <S.PostImage>
-          <Image
-            src="/assets/images/image.png"
-            fill
-            alt="title"
-            className="object-cover object-center transition-all hover:scale-105"
-            priority
-          />
-        </S.PostImage>
-      </Link>
-      <S.TagsWrap>
-        {['TS', 'React', 'Next.js'].map((tag) => (
-          <Tag key={tag} label={tag} />
-        ))}
+      <S.PostImageContainer href={slug}>
+        <S.PostImage src={image} fill alt={title} priority />
+      </S.PostImageContainer>
 
-        <Tag onClick={() => console.log('hey')} label="link" />
-      </S.TagsWrap>
+      {tags ? (
+        <S.TagsWrap>
+          {tags.map((tag) => (
+            <Tag key={tag} label={tag} />
+          ))}
+        </S.TagsWrap>
+      ) : null}
 
-      <S.Time>15 de maio de 2025 • 3 minutos de leitura</S.Time>
+      <S.Time>
+        {formatDate(date)} • {readingTime.toString()} minuto
+        {readingTime <= 1 ? '' : 's'} de leitura
+      </S.Time>
 
-      <Link href="#" className="[&>h3]:hover:text-link [&>p]:hover:text-white">
-        <S.Title>
-          O que é Dependency Injection e como aplicar no REact.js?
-        </S.Title>
-        <S.Summary>
-          Vamos aprender como aplicar esse conceiro tão importante no React.js!
-        </S.Summary>
-      </Link>
+      <S.Content href="#" className="">
+        <S.Title>{title}</S.Title>
+        <S.Summary>{description}</S.Summary>
+      </S.Content>
     </S.PostContainer>
   )
 }
