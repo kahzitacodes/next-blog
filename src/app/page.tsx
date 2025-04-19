@@ -16,7 +16,7 @@ export default function Home() {
       <Profile {...profile} />
       <Grid sm={{ cols: 2, gap: 6 }} lg={{ cols: 3, gap: 8 }}>
         {posts.map((post) => (
-          <PostCard key={post._id} {...post} />
+          <PostCard key={post.id} {...post} />
         ))}
       </Grid>
     </main>

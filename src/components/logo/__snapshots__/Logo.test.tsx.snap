@@ -2,8 +2,9 @@
 
 exports[`Logo should render successfully 1`] = `
 <div>
-  <div
+  <a
     class=""
+    href="/"
   >
     <img
       alt="Logo"
@@ -11,10 +12,10 @@ exports[`Logo should render successfully 1`] = `
       decoding="async"
       height="21"
       loading="lazy"
-      src="assets/images/logo.svg"
+      src="/assets/images/logo.svg"
       style="color: transparent;"
       width="28"
     />
-  </div>
+  </a>
 </div>
 `;

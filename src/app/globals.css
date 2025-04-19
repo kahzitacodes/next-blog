@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  background-color: #fb7185;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #030712;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(203, 213, 225, 0.5);
+  border-radius: 8px;
+  border: 1px solid #030712;
+}
+
+pre::-webkit-scrollbar {
+  height: 8px;
+  background-color: transparent;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

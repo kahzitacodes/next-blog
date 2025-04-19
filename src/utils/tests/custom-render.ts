@@ -1,9 +1,6 @@
-import { render, RenderOptions } from '@testing-library/react'
+import { render } from '@testing-library/react'
 
-const customRender = (
-  ui: React.ReactElement,
-  options: Omit<RenderOptions, 'wrapper'>
-) => render(ui, { ...options })
+const customRender = (ui: React.ReactElement) => render(ui)
 
 export * from '@testing-library/react'
 export { customRender as render }

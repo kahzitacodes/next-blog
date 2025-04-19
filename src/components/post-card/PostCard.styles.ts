@@ -29,7 +29,7 @@ export const TagsWrap = tw.div`
   gap-2
 `
 
-export const Time = tw.div`
+export const Details = tw.div`
   text-sm
   text-gray-400
   mb-2

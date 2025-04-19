@@ -14,8 +14,9 @@ exports[`<Footer /> should render successfully 1`] = `
         class="flex max-w-[12rem] flex-col gap-6 md:max-w-[36rem]"
         role="contentinfo"
       >
-        <div
+        <a
           class=""
+          href="/"
         >
           <img
             alt="Logo"
@@ -24,11 +25,11 @@ exports[`<Footer /> should render successfully 1`] = `
             decoding="async"
             height="21"
             loading="lazy"
-            src="assets/images/logo.svg"
+            src="/assets/images/logo.svg"
             style="color: transparent;"
             width="28"
           />
-        </div>
+        </a>
         <p>
           Frontend developer and Interface designer
         </p>

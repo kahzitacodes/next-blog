@@ -8,14 +8,16 @@ import * as S from './PostCard.styles'
 
 export const PostCard: React.FC<PropTypes> = (props) => {
   const {
-    readingTime,
+    $readingTime,
     slug,
-    frontMatter: { description, image, title, date, tags }
+    $frontMatter: { description, image, title, date, tags }
   } = props
+
+  const postLink = `/articles/${slug}`
 
   return (
     <S.PostContainer>
-      <S.PostImageContainer href={slug}>
+      <S.PostImageContainer href={postLink}>
         <S.PostImage src={image} fill alt={title} priority />
       </S.PostImageContainer>
 
@@ -27,12 +29,12 @@ export const PostCard: React.FC<PropTypes> = (props) => {
         </S.TagsWrap>
       ) : null}
 
-      <S.Time>
-        {formatDate(date)} • {readingTime.toString()} minuto
-        {readingTime <= 1 ? '' : 's'} de leitura
-      </S.Time>
+      <S.Details>
+        {formatDate(date)} • {$readingTime.toString()} minuto
+        {$readingTime <= 1 ? '' : 's'} de leitura
+      </S.Details>
 
-      <S.Content href="#" className="">
+      <S.Content href={postLink} className="">
         <S.Title>{title}</S.Title>
         <S.Summary>{description}</S.Summary>
       </S.Content>

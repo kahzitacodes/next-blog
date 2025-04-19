@@ -1,12 +1,12 @@
 export type Post = {
   id: string
-  readingTime: number
+  $readingTime: number
   slug: string
   body: {
     code: string
     raw: string
   }
-  frontMatter: {
+  $frontMatter: {
     title: string
     description: string
     date: string

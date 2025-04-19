@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 import { navigationConfig } from '@/config'
-import { Container, Header, MainNav, Footer } from '@/components'
+import { Container, Header, MainNav, Footer, ScrollTop } from '@/components'
 
 import './globals.css'
 
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} bg-primary text-gray-100`}>
         <Header>
           <MainNav items={navigationConfig} />
@@ -27,6 +27,7 @@ export default function RootLayout({
         <Container>
           <div className="py-24">{children}</div>
         </Container>
+        <ScrollTop />
         <Footer items={navigationConfig} />
       </body>
     </html>
