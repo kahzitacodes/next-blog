@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 import * as S from './Logo.styles'
 import { PropTypes } from './Logo.types'
 

@@ -1,4 +1,5 @@
 export type PropType = {
+  dataTestid?: string
   children: React.ReactNode
   cols?: number
   gap?: number

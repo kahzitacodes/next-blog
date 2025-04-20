@@ -1,14 +1,13 @@
 'use client'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 
 import { formatDate } from '@/utils/helpers'
 
-import { Mdx } from '../mdx'
-import { Button } from '../button'
+import { Mdx, Button } from '@/components'
 
 import { PropTypes } from './Post.types'
 import * as S from './Post.styles'
-import { useRouter } from 'next/navigation'
 
 export const Post = (props: PropTypes) => {
   const router = useRouter()

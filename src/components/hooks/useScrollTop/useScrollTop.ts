@@ -17,7 +17,10 @@ export const useScrollTop = () => {
     return () => window.removeEventListener('scroll', handleControlScroll)
   }, [])
 
-  const handleScrollTop = () => window.scrollTo(0, 0)
+  const handleScrollTop = () => {
+    setShow(false)
+    window.scrollTo(0, 0)
+  }
 
   return {
     show,

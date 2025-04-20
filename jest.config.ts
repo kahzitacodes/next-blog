@@ -10,7 +10,7 @@ const config: Config = {
   coverageDirectory: './coverage',
   coverageProvider: 'v8',
   collectCoverageFrom: [
-    'src/**/*.ts(x)?',
+    'src/**/*.(test|spec).ts(x)?',
     '!src/app/**',
     '!src/types/**',
     '!src/styles/**',
@@ -27,10 +27,10 @@ const config: Config = {
   moduleDirectories: ['node_modules', '<rootDir>'],
   setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
-  // testMatch: [
-  //   '<rootDir>/src/**/*.test.{ts,tsx}',
-  //   '<rootDir>/src/**/*.spec.{ts,tsx}'
-  // ],
+  testMatch: [
+    '<rootDir>/src/**/*.test.{ts,tsx}',
+    '<rootDir>/src/**/*.spec.{ts,tsx}'
+  ],
   testEnvironment: 'jsdom',
   moduleNameMapper: {
     'src/(.*)': '<rootDir>/src/$1'

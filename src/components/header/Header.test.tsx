@@ -8,8 +8,7 @@ describe('<Profile />', () => {
     const { container } = render(
       <Header>
         <MainNav items={navigationMock} />
-      </Header>,
-      {}
+      </Header>
     )
 
     expect(screen.getByAltText(/Logo/i)).toBeInTheDocument()

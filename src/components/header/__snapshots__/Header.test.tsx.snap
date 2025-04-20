@@ -7,8 +7,9 @@ exports[`<Profile /> should render successfully 1`] = `
   <div
     class="flex h-full w-full items-center justify-between bg-primary/50 px-6"
   >
-    <div
+    <a
       class=""
+      href="/"
     >
       <img
         alt="Logo"
@@ -16,11 +17,11 @@ exports[`<Profile /> should render successfully 1`] = `
         decoding="async"
         height="21"
         loading="lazy"
-        src="assets/images/logo.svg"
+        src="/assets/images/logo.svg"
         style="color: transparent;"
         width="28"
       />
-    </div>
+    </a>
     <nav
       class="items-center justify-between hidden lg:flex"
     >

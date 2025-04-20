@@ -1,9 +1,10 @@
 'use client'
+import { List } from '@/components'
+import { useMainNav } from '@/components/hooks'
+
 import { ToogleButton } from './components/toogle-button'
 import { PropTypes } from './MainNav.types'
 import * as S from './MainNav.styles'
-import { useMainNav } from '../hooks/useMainNav'
-import { List } from '../list'
 
 export const MainNav = ({ items }: PropTypes) => {
   const { handleToggleMenu, isMenuOpen } = useMainNav()

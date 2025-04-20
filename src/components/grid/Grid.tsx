@@ -1,6 +1,7 @@
 import { PropType } from './Grid.types'
 
 export const Grid = ({
+  dataTestid,
   children,
   cols = 1,
   gap = 8,
@@ -23,7 +24,10 @@ export const Grid = ({
   const responsive = `${extraSmall} ${small} ${medium} ${large} ${extraLarge} ${extraExtraLarge}`
 
   return (
-    <div className={`grid w-full grid-cols-${cols} gap-${gap} ${responsive}`}>
+    <div
+      data-testid={dataTestid}
+      className={`grid w-full grid-cols-${cols} gap-${gap} ${responsive}`}
+    >
       {children}
     </div>
   )

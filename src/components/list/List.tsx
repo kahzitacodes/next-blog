@@ -1,7 +1,8 @@
+import Link from 'next/link'
+import { Icon } from '@/components'
+
 import { PropTypes } from './List.types'
 import * as S from './List.styles'
-import Link from 'next/link'
-import { Icon } from '../icon'
 
 export const List = ({ items, ...remainingProps }: PropTypes) => (
   <S.Wrapper {...remainingProps}>

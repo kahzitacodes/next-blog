@@ -1,4 +1,5 @@
-import { Logo } from '@/components/logo/Logo'
+import { Logo } from '@/components'
+
 import { PropTypes } from './Header.types'
 import * as S from './Header.styles'
 

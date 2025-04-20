@@ -1,11 +1,9 @@
 import { siteConfig } from '@/config'
 
-import { Container } from '../container'
-import { Logo } from '../logo'
+import { List, Container, Logo } from '@/components'
 
 import { PropTypes } from './Footer.types'
 import * as S from './Footer.styles'
-import { List } from '../list'
 
 export const Footer = ({ items }: PropTypes) => {
   const fullYear = new Date().getFullYear()

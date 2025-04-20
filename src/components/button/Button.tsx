@@ -1,4 +1,4 @@
-import { Icon } from '../icon'
+import { Icon } from '@/components'
 import * as S from './Button.styles'
 import { PropTypes } from './Button.types'
 

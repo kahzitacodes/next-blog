@@ -1,6 +1,7 @@
+import Image from 'next/image'
+
 import { PropTypes } from './Profile.types'
 import * as S from './Profile.styles'
-import Image from 'next/image'
 
 export const Profile = (props: PropTypes) => {
   const { avatar, name, description } = props

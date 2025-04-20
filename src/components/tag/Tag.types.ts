@@ -1,3 +1,5 @@
+import * as LucideIcons from 'lucide-react'
+
 export type StyleProps = {
   variant?: 'default'
   onClick?: () => void
@@ -5,6 +7,7 @@ export type StyleProps = {
 
 export type PropType = {
   label: string
-  icon?: React.ReactNode
+  icon?: keyof typeof LucideIcons
   className?: string
+  dataTestid?: string
 } & StyleProps
