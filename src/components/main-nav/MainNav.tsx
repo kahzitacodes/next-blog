@@ -1,5 +1,5 @@
 'use client'
-import { List } from '@/components'
+import { List } from '@/components/list'
 import { useMainNav } from '@/components/hooks'
 
 import { ToogleButton } from './components/toogle-button'

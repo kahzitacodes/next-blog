@@ -5,9 +5,11 @@ export type StyledProps = {
   variant?: 'ghost'
   full?: boolean
   icon?: keyof typeof LucideIcons
+  iconAfter?: keyof typeof LucideIcons
   $animate?: boolean
+  disabled?: boolean
 }
 
 export type PropTypes = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-  children: string
+  children: string | React.ReactNode
 } & StyledProps

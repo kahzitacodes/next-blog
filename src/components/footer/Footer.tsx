@@ -1,6 +1,8 @@
 import { siteConfig } from '@/config'
 
-import { List, Container, Logo } from '@/components'
+import { List } from '@/components/list'
+import { Logo } from '@/components/logo'
+import { Container } from '@/components/container'
 
 import { PropTypes } from './Footer.types'
 import * as S from './Footer.styles'

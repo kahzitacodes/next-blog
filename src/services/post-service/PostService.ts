@@ -1,10 +1,19 @@
 import { allPosts } from 'contentlayer/generated'
-import { formatPost, formatPosts } from '@/utils/helpers'
+import { formatPost, formatPosts, pagination } from '@/utils/helpers'
+import { IGetAllPosts } from './interface'
 
 export const PostService = {
-  getAll: () => {
+  getAll: ({ currentPage = 1, limit = 6 }: IGetAllPosts = {}) => {
+    const { paginatedData, totalPages } = pagination(
+      allPosts,
+      limit,
+      currentPage
+    )
+
     return {
-      posts: formatPosts(allPosts)
+      posts: formatPosts(paginatedData),
+      totalPages,
+      currentPage
     }
   },
 

@@ -1,7 +1,7 @@
 'use client'
 
-import { Icon } from '@/components'
-import { useScrollTop } from '@/components/hooks'
+import { useScrollTop } from '@/components/hooks/useScrollTop'
+import { Icon } from '../icon'
 import * as S from './ScrollTop.styles'
 
 export const ScrollTop = () => {

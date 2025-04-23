@@ -1,5 +1,5 @@
 import { Post } from '@/components/post'
-import { PostService } from '@/services'
+import { PostService } from '@/services/post-service'
 
 export default function PostPage({ params }: { params: { slug: string } }) {
   const post = PostService.getBySlug(params.slug)

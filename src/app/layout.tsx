@@ -2,7 +2,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 import { navigationConfig } from '@/config'
-import { Container, Header, MainNav, Footer, ScrollTop } from '@/components'
+import { Container, Header, ScrollTop } from '@/components'
+import { MainNav } from '@/components/main-nav'
+import { Footer } from '@/components/footer'
 
 import './globals.css'
 

@@ -6,10 +6,20 @@ export const Button = ({
   children,
   variant = 'ghost',
   icon,
+  iconAfter,
   ...remainingProps
 }: PropTypes) => (
   <S.Container variant={variant} {...remainingProps}>
-    {icon && <Icon name={icon} />}
+    {icon && (
+      <S.IconStart>
+        <Icon name={icon} />
+      </S.IconStart>
+    )}
     {children}
+    {iconAfter && (
+      <S.IconEnd>
+        <Icon name={iconAfter} />
+      </S.IconEnd>
+    )}
   </S.Container>
 )

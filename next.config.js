@@ -3,6 +3,16 @@
 const { withContentlayer } = require('next-contentlayer')
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/articles',
+        permanent: true
+      }
+    ]
+  }
+}
 
 module.exports = withContentlayer(nextConfig)

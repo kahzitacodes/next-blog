@@ -1,7 +1,7 @@
 'use client'
 
 import { formatDate } from '@/utils/helpers'
-import { Tag } from '@/components'
+import { Tag } from '@/components/tag'
 
 import { PropTypes } from './PostCard.types'
 import * as S from './PostCard.styles'
