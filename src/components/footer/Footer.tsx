@@ -36,7 +36,7 @@ export const Footer = ({ items }: PropTypes) => {
         </S.Content>
 
         <S.CopyRightContainer>
-          <p>Todos os direitos reseverdos © Karine Pereira {fullYear}</p>
+          <p>All rights reserved © Karine Pereira {fullYear}</p>
         </S.CopyRightContainer>
       </S.Wrapper>
     </Container>

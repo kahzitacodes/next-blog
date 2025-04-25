@@ -3,11 +3,11 @@ import { Site } from '@/types'
 export const siteConfig: Site = {
   name: 'Karine Pereira',
   avatar: '/assets/images/avatar.jpeg',
-  description: 'Blog onde falo sobre arte, design e tecnologia',
+  description: 'Just me rambling about art, design, and all things tech.',
   title: 'Frontend developer and Interface designer',
   url: 'http://meusite.com.br',
   subtitle:
-    'Welcome to my blog! My name is Karine, I love technology, and everyday I try to learn something new.',
+    'Hey there! I’m Karine. I’m into tech, curious by nature, and always learning something (even if it’s by accident).',
   links: [
     {
       title: 'Github',

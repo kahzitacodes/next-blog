@@ -4,13 +4,13 @@ import Image from 'next/image'
 export const AboutContent = () => {
   return (
     <main>
-      <h1 className="mb-8 text-3xl font-bold">Sobre mim</h1>
+      <h1 className="mb-8 text-3xl font-bold">About me</h1>
 
       <div className="relative mb-8 h-[400px] w-full overflow-hidden rounded-xl">
         <Image
           src="/assets/images/me.png"
           fill
-          alt="Foto"
+          alt="Photo"
           className="object-cover object-center"
         />
       </div>

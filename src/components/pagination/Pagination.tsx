@@ -27,7 +27,7 @@ export const Pagination = (props: PropTypes) => {
         icon="ArrowLeft"
         disabled={isFirst}
       >
-        Página anterior
+        Previous page
       </Button>
 
       <S.CurrentInfo>
@@ -40,7 +40,7 @@ export const Pagination = (props: PropTypes) => {
         iconAfter="ArrowRight"
         disabled={isLast}
       >
-        Próxima página
+        Next page
       </Button>
     </S.Wrapper>
   )
