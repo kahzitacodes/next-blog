@@ -1,2 +1,2 @@
 export * from './Button'
-export * as ButtonTypes from './Button.types'
+export type { PropTypes as ButtonTypes } from './Button.types'

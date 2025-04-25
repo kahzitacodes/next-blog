@@ -1,9 +1,9 @@
 'use client'
-import { Button } from '@/components'
+import { Button } from '@/components/button'
 import { PropTypes } from './Pagination.types'
-import * as S from './Pagination.styles'
 import { usePathname, useRouter } from 'next/navigation'
 import { usePagination } from '../hooks/usePagination'
+import * as S from './Pagination.styles'
 
 export const Pagination = (props: PropTypes) => {
   const { currentPage, totalPages, dataTestId, ...remainingProps } = props
@@ -22,6 +22,7 @@ export const Pagination = (props: PropTypes) => {
   return (
     <S.Wrapper data-testid={dataTestId} {...remainingProps}>
       <Button
+        variant="ghost"
         onClick={() => router.push(prevPage)}
         $animate
         icon="ArrowLeft"
@@ -35,6 +36,7 @@ export const Pagination = (props: PropTypes) => {
       </S.CurrentInfo>
 
       <Button
+        variant="ghost"
         onClick={() => router.push(nextPage)}
         $animate
         iconAfter="ArrowRight"

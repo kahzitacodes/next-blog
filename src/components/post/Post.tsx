@@ -4,7 +4,8 @@ import { useRouter } from 'next/navigation'
 
 import { formatDate } from '@/utils/helpers'
 
-import { Mdx, Button } from '@/components'
+import { Mdx } from '@/components'
+import { Button } from '../button'
 
 import { PropTypes } from './Post.types'
 import * as S from './Post.styles'
@@ -20,7 +21,12 @@ export const Post = (props: PropTypes) => {
 
   return (
     <S.Wrapper {...props}>
-      <Button onClick={() => router.push('/')} $animate icon="ArrowLeft">
+      <Button
+        variant="ghost"
+        onClick={() => router.push('/')}
+        $animate
+        icon="ArrowLeft"
+      >
         Voltar
       </Button>
 

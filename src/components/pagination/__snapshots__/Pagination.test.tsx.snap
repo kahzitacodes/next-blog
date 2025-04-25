@@ -7,7 +7,7 @@ exports[`<Pagination /> should render successfully 1`] = `
     data-testid="pagination"
   >
     <button
-      class="flex items-center gap-1 text-white font-medium h-[40px] rounded-md w-fit transition-colors duration-200 group disabled:text-zinc-600 disabled:cursor-default bg-transparent px-0 hover:text-link disabled:pointer-events-none group"
+      class="flex items-center gap-1 text-white font-medium h-[40px] rounded-md w-fit transition-colors duration-200 group disabled:text-zinc-600 disabled:cursor-default disabled:border-zinc-600 bg-transparent px-0 hover:text-link disabled:pointer-events-none group"
       disabled=""
       variant="ghost"
     >
@@ -45,7 +45,7 @@ exports[`<Pagination /> should render successfully 1`] = `
       10
     </span>
     <button
-      class="flex items-center gap-1 text-white font-medium h-[40px] rounded-md w-fit transition-colors duration-200 group disabled:text-zinc-600 disabled:cursor-default bg-transparent px-0 hover:text-link disabled:pointer-events-none group"
+      class="flex items-center gap-1 text-white font-medium h-[40px] rounded-md w-fit transition-colors duration-200 group disabled:text-zinc-600 disabled:cursor-default disabled:border-zinc-600 bg-transparent px-0 hover:text-link disabled:pointer-events-none group"
       variant="ghost"
     >
       Next page

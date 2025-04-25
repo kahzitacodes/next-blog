@@ -4,7 +4,7 @@ import { PropTypes } from './Button.types'
 
 export const Button = ({
   children,
-  variant = 'ghost',
+  variant = 'secondary',
   icon,
   iconAfter,
   ...remainingProps

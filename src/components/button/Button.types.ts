@@ -2,7 +2,7 @@ import * as LucideIcons from 'lucide-react'
 
 export type StyledProps = {
   dataTestid?: string
-  variant?: 'ghost'
+  variant?: 'ghost' | 'secondary'
   full?: boolean
   icon?: keyof typeof LucideIcons
   iconAfter?: keyof typeof LucideIcons
