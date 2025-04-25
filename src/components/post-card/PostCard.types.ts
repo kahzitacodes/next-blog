@@ -1,3 +1,6 @@
 import { Post } from '@/types'
 
-export type PropTypes = Post
+export type StyledProps = {
+  $isMain?: boolean
+}
+export type PropTypes = Post & StyledProps

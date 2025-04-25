@@ -3,25 +3,26 @@ import { Button } from '@/components'
 import { PropTypes } from './Pagination.types'
 import * as S from './Pagination.styles'
 import { usePathname, useRouter } from 'next/navigation'
+import { usePagination } from '../hooks/usePagination'
 
 export const Pagination = (props: PropTypes) => {
   const { currentPage, totalPages, dataTestId, ...remainingProps } = props
   const pathname = usePathname()
   const router = useRouter()
 
+  const { nextPage, prevPage } = usePagination({
+    currentPage,
+    totalPages,
+    pathname
+  })
+
   const isFirst = currentPage === 1
   const isLast = currentPage === totalPages
-  const params = new URLSearchParams()
-
-  const paginationPath = (pageNumber: number) => {
-    params.set('page', pageNumber.toString())
-    return `${pathname}?page=${pageNumber.toString()}`
-  }
 
   return (
     <S.Wrapper data-testid={dataTestId} {...remainingProps}>
       <Button
-        onClick={() => router.push(paginationPath(currentPage - 1))}
+        onClick={() => router.push(prevPage)}
         $animate
         icon="ArrowLeft"
         disabled={isFirst}
@@ -34,7 +35,7 @@ export const Pagination = (props: PropTypes) => {
       </S.CurrentInfo>
 
       <Button
-        onClick={() => router.push(paginationPath(currentPage + 1))}
+        onClick={() => router.push(nextPage)}
         $animate
         iconAfter="ArrowRight"
         disabled={isLast}
