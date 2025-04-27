@@ -6,7 +6,7 @@ export const postMock: Post = {
     description: 'Description',
     image: '/assets/images/image.png',
     title: 'Post title',
-    tags: ['react']
+    tags: ['react', 'typescript']
   },
   $readingTime: 3,
   body: {

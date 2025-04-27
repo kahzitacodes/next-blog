@@ -14,7 +14,7 @@ export const PostCard: React.FC<PropTypes> = (props) => {
     $frontMatter: { description, image, title, date, tags }
   } = props
 
-  const postLink = `/articles/${slug}`
+  const postLink = `/posts/${slug}`
 
   return (
     <S.PostContainer $isMain={$isMain}>
@@ -24,9 +24,11 @@ export const PostCard: React.FC<PropTypes> = (props) => {
 
       <S.PostContent>
         {tags ? (
-          <S.TagsWrap>
+          <S.TagsWrap aria-label="tags">
             {tags.map((tag) => (
-              <Tag key={tag} label={tag} />
+              <li key={tag}>
+                <Tag label={tag} />
+              </li>
             ))}
           </S.TagsWrap>
         ) : null}

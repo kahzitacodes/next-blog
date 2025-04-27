@@ -27,7 +27,7 @@ export const Post = (props: PropTypes) => {
         $animate
         icon="ArrowLeft"
       >
-        Voltar
+        Back
       </Button>
 
       <S.ImageContainer>

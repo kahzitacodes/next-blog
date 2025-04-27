@@ -3,7 +3,7 @@ import tw from 'tailwind-styled-components'
 export const Wrapper = tw.div`
   flex
   flex-col
-  gap-8
+  gap-4
 `
 
 export const ImageContainer = tw.div`

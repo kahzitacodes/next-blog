@@ -30,7 +30,7 @@ export const PostContent = tw.div<StyledProps>`
 
   ${({ $isMain }) => $isMain && 'md:flex-row mb-3'}
 `
-export const TagsWrap = tw.div`
+export const TagsWrap = tw.ul`
   mb-4
   flex
   flex-wrap
