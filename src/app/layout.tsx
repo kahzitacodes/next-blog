@@ -27,7 +27,7 @@ export default function RootLayout({
           <MainNav items={navigationConfig} />
         </Header>
         <Container>
-          <div className="py-24">{children}</div>
+          <div className="pb-12 pt-24">{children}</div>
         </Container>
         <ScrollTop />
         <Footer items={navigationConfig} />

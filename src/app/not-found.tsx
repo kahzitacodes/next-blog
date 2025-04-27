@@ -4,12 +4,13 @@ import { useRouter } from 'next/navigation'
 
 export default function NotFound() {
   const router = useRouter()
+
   return (
     <Empty
-      title="There is nothing here"
-      description="Article not found"
+      title="Oops!"
+      description="Page not found"
       button={{
-        children: 'Back to posts',
+        children: 'Back to home',
         onClick: () => router.push('/')
       }}
     />

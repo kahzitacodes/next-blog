@@ -6,7 +6,8 @@ import { usePagination } from '../hooks/usePagination'
 import * as S from './Pagination.styles'
 
 export const Pagination = (props: PropTypes) => {
-  const { currentPage, totalPages, dataTestId, ...remainingProps } = props
+  const { currentPage = 1, totalPages, dataTestId, ...remainingProps } = props
+
   const pathname = usePathname()
   const router = useRouter()
 
@@ -18,6 +19,7 @@ export const Pagination = (props: PropTypes) => {
 
   const isFirst = currentPage === 1
   const isLast = currentPage === totalPages
+  console.log(totalPages)
 
   return (
     <S.Wrapper data-testid={dataTestId} {...remainingProps}>
@@ -28,7 +30,7 @@ export const Pagination = (props: PropTypes) => {
         icon="ArrowLeft"
         disabled={isFirst}
       >
-        Previous page
+        Previous
       </Button>
 
       <S.CurrentInfo>
@@ -42,7 +44,7 @@ export const Pagination = (props: PropTypes) => {
         iconAfter="ArrowRight"
         disabled={isLast}
       >
-        Next page
+        Next
       </Button>
     </S.Wrapper>
   )

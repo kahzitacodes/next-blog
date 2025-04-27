@@ -1,6 +1,6 @@
 import { MDXComponents } from 'mdx/types'
 import { useMDXComponent } from 'next-contentlayer/hooks'
-import { Pre } from '@/components'
+import { Pre } from '@/components/pre'
 
 const components: MDXComponents = {
   h1: ({ className = '', children, ...remainingProps }) => (

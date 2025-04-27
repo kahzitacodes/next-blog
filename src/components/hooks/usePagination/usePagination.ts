@@ -9,8 +9,9 @@ export const usePagination = ({
   pathname
 }: usePaginationProps) => {
   const params = new URLSearchParams()
-  const prevPage = currentPage === 1 ? 1 : currentPage - 1
-  const nextPage = currentPage === totalPages ? totalPages : currentPage + 1
+  const page = Number(currentPage)
+  const prevPage = page === 1 ? 1 : page - 1
+  const nextPage = page === totalPages ? totalPages : page + 1
 
   const paginationPath = (pageNumber: number) => {
     params.set('page', pageNumber.toString())

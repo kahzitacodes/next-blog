@@ -2,10 +2,11 @@
 
 exports[`<List /> should render successfully 1`] = `
 <ul
-  class="flex gap-3"
+  class="flex gap-6 font-medium flex-row"
+  direction="horizontal"
 >
   <li
-    class="flex gap-2 font-light text-medium relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
+    class="flex gap-2 relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
   >
     <a
       class="flex justify-center gap-3"
@@ -50,7 +51,7 @@ exports[`<List /> should render successfully 1`] = `
     </a>
   </li>
   <li
-    class="flex gap-2 font-light text-medium relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
+    class="flex gap-2 relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
   >
     <a
       class="flex justify-center gap-3"
@@ -81,7 +82,7 @@ exports[`<List /> should render successfully 1`] = `
     </a>
   </li>
   <li
-    class="flex gap-2 font-light text-medium relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
+    class="flex gap-2 relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
   >
     <a
       class="flex justify-center gap-3"
@@ -123,7 +124,7 @@ exports[`<List /> should render successfully 1`] = `
     </a>
   </li>
   <li
-    class="flex gap-2 font-light text-medium relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
+    class="flex gap-2 relative [&>a]:hover:text-link [&>a]:transition-colors [&>a]:duration-200 [&>svg]:hover:text-link"
   >
     <a
       class="flex justify-center gap-3"

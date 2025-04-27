@@ -6,7 +6,7 @@ export const AboutContent = () => {
     <main>
       <h1 className="mb-8 text-3xl font-bold">About me</h1>
 
-      <div className="relative mb-8 h-[400px] w-full overflow-hidden rounded-xl">
+      <div className="relative mb-8 h-[300px] w-full overflow-hidden rounded-xl md:h-[500px]">
         <Image
           src="/assets/images/me.png"
           fill

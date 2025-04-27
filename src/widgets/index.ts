@@ -1,2 +1,3 @@
-export * from './articles-list/ArticlesList'
+export * from './post/PostList'
 export * from './about/AboutContent'
+export * from './home/HomeContent'

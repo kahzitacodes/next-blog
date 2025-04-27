@@ -23,7 +23,7 @@ export const Footer = ({ items }: PropTypes) => {
             role="contentinfo"
           >
             <S.Title>Social</S.Title>
-            <List items={siteConfig.links} className="flex-col" />
+            <List items={siteConfig.links} direction="vertical" />
           </S.Section>
 
           <S.Section
@@ -31,7 +31,7 @@ export const Footer = ({ items }: PropTypes) => {
             role="contentinfo"
           >
             <S.Title>Sitemap</S.Title>
-            <List items={items} className="flex-col" />
+            <List items={items} direction="vertical" />
           </S.Section>
         </S.Content>
 

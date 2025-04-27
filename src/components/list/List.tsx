@@ -4,8 +4,12 @@ import { Icon } from '@/components'
 import { PropTypes } from './List.types'
 import * as S from './List.styles'
 
-export const List = ({ items, ...remainingProps }: PropTypes) => (
-  <S.Wrapper {...remainingProps}>
+export const List = ({
+  items,
+  direction = 'horizontal',
+  ...remainingProps
+}: PropTypes) => (
+  <S.Wrapper direction={direction} {...remainingProps}>
     {items.map((item) => (
       <S.ListItem key={item.title}>
         <Link href={item.href} className="flex justify-center gap-3">

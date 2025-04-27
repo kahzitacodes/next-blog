@@ -1,15 +1,24 @@
 import tw from 'tailwind-styled-components'
+import { StyledProps } from './List.types'
 
-export const Wrapper = tw.ul`
+const getDirection = ({ direction }: StyledProps) => {
+  switch (direction) {
+    case 'horizontal':
+      return 'gap-6 font-medium flex-row'
+    case 'vertical':
+      return 'gap-3 flex-col'
+  }
+}
+
+export const Wrapper = tw.ul<StyledProps>`
   flex
-  gap-3
+
+  ${(props) => getDirection(props)}
 `
 
 export const ListItem = tw.li`
   flex
   gap-2
-  font-light
-  text-medium
   relative
   [&>a]:hover:text-link
   [&>a]:transition-colors

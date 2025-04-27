@@ -35,7 +35,7 @@ exports[`<Pagination /> should render successfully 1`] = `
           />
         </svg>
       </div>
-      Previous page
+      Previous
     </button>
     <span
       class=""
@@ -48,7 +48,7 @@ exports[`<Pagination /> should render successfully 1`] = `
       class="flex items-center gap-1 text-white font-medium h-[40px] rounded-md w-fit transition-colors duration-200 group disabled:text-zinc-600 disabled:cursor-default disabled:border-zinc-600 bg-transparent px-0 hover:text-link disabled:pointer-events-none group"
       variant="ghost"
     >
-      Next page
+      Next
       <div
         class="duration-200' shrink-0 transition-transform duration-200' group-hover:translate-x-0.5"
       >

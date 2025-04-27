@@ -6,8 +6,8 @@ export const navigationConfig: NavItem[] = [
     href: '/'
   },
   {
-    title: 'Articles',
-    href: '/articles'
+    title: 'Posts',
+    href: '/posts'
   },
   {
     title: 'About me',
