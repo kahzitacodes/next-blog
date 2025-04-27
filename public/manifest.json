@@ -1,0 +1,22 @@
+{
+  "name": "Karin's Blog",
+  "short_name": "KB",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#201F26",
+  "theme_color": "#DC6D70",
+  "description": "Blog PWA",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/"
+}
