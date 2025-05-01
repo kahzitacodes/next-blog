@@ -7,6 +7,7 @@ const withPlugins = require('next-compose-plugins')
 const isDev = process.env.NODE_ENV !== 'production'
 const withPWA = withPWAInit({
   dest: 'public',
+  disable: isDev,
   exclude: [
     ({ asset }) => {
       if (
