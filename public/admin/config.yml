@@ -2,11 +2,11 @@ backend:
   name: github
   branch: main
   repo: kahzitacodes/next-blog
-  base_url: https://next-blog-pi-lac.vercel.app/
-  auth_endpoint: api/auth/
+  base_url: https://next-blog-pi-lac.vercel.app
+  auth_endpoint: api/auth
 
 media_folder: public/assets/images
-public_folder: public
+public_folder: /assets/images
 
 publish_mode: editorial_workflow
 
