@@ -1,0 +1,39 @@
+backend:
+  name: github
+  branch: main
+  repo: https://github.com/kahzitacodes/next-blog
+  base_url: ''
+  auth:_endpoint: api/auth/
+
+media_folder: public/assets/images
+public_folder: public
+
+publish_mode: editorial_workflow
+
+slug:
+  enconding: 'ascii'
+  clean_accents: true
+
+collections:
+  - name: 'posts'
+    label: 'Posts'
+    extension: mdx
+    format: 'frontmatter'
+    folder: posts
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+      - { label: 'Date', name: 'date', widget: 'datetime', default: 'YYYY-MM-DD hh:mm:ss' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'select', multiple: true, options: [
+        'JavaScript',
+        'TypeScript',
+        'HTML',
+        'NextJS',
+        'ReactJS',
+        'Misc',
+        'Books',
+      ] }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

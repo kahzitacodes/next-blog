@@ -7,6 +7,7 @@ import { MainNav } from '@/components/main-nav'
 import { Footer } from '@/components/footer'
 
 import './globals.css'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <Script
+        async
+        src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+      />
       <body className={`${inter.className} bg-primary text-gray-100`}>
         <Header>
           <MainNav items={navigationConfig} />
