@@ -1,7 +1,7 @@
 export type usePaginationProps = {
   currentPage: number
   totalPages: number
-  pathname?: string
+  pathname: string | null
 }
 export const usePagination = ({
   currentPage,
