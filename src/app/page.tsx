@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 }
 
 export default function Home() {
-  const { posts } = PostService.getAll({ currentPage: 1, limit: 6 })
+  const { posts } = PostService.getAll({ currentPage: 1, limit: 4 })
 
   const profile = {
     name: siteConfig.name,

@@ -8,14 +8,16 @@ export const PostContainer = tw.article<StyledProps>`
   flex-col
   gap-5
 
-  ${({ $isMain }) => $isMain && 'md:flex-row gap-6'}
+  ${({ $isMain }) => $isMain && 'md:flex-row gap-0 w-full bg-gray-950 rounded-lg'}
 `
-export const PostImageContainer = tw(Link)`
+export const PostImageContainer = tw(Link)<StyledProps>`
   relative
   h-80
   w-full
   rounded-lg
   overflow-hidden
+
+  ${({ $isMain }) => $isMain && 'rounded-b-none md:rounded-r-none md:w-2/3'}
 `
 
 export const PostImage = tw(Image)`
@@ -28,7 +30,7 @@ export const PostContent = tw.div<StyledProps>`
   flex
   flex-col
 
-  ${({ $isMain }) => $isMain && 'md:flex-row mb-3'}
+  ${({ $isMain }) => $isMain && 'p-6 md:p-8'}
 `
 export const TagsWrap = tw.ul`
   mb-4
