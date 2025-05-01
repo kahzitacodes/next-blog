@@ -3,7 +3,7 @@ backend:
   branch: main
   repo: kahzitacodes/next-blog
   base_url: https://next-blog-pi-lac.vercel.app/
-  auth:_endpoint: api/auth/
+  auth_endpoint: api/auth/
 
 media_folder: public/assets/images
 public_folder: public
