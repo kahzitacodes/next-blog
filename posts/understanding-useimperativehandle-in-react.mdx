@@ -1,0 +1,45 @@
+---
+layout: post
+title: Understanding useImperativeHandle in React
+date: 2025-05-03 12:10:00
+description: A quick look at how to let parent components call functions on
+  their kids — the React way.
+image: /assets/images/lautaro-andreani-uysbcu9rp3y-unsplash.jpg
+tags:
+  - ReactJS
+---
+The `useImperativeHandle` hook lets you customize the instance value that is exposed when using `ref` with `forwardRef`. In simple terms, it allows a parent component to **call functions on a child component** — but only the ones you explicitly expose.
+
+## When should you use it?
+
+You usually use `useImperativeHandle` when a parent component needs to imperatively control a child — like focusing an input or triggering an animation — but you want to **keep the child’s internal logic private**.
+
+## Example: focusing an input from the parent
+
+```jsx
+import { useRef, useImperativeHandle, forwardRef } from 'react'
+
+const CustomInput = forwardRef((props, ref) => {
+  const inputRef = useRef()
+
+  useImperativeHandle(ref, () => ({
+    focus: () => {
+      inputRef.current?.focus()
+    }
+  }))
+
+  return <input ref={inputRef} type="text" />
+})
+
+export default function App() {
+  const inputRef = useRef()
+
+  return (
+    <div>
+      <CustomInput ref={inputRef} />
+      <button onClick={() => inputRef.current.focus()}>
+        Focus Input
+      </button>
+    </div>
+  )
+}
