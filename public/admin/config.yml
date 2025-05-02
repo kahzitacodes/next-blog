@@ -24,9 +24,10 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
-      - { label: 'Date', name: 'date', widget: 'datetime', default: 'YYYY-MM-DD hh:mm:ss' }
-      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Date', name: 'date', widget: 'datetime', format: 'YYYY-MM-DD hh:mm:ss', required: true }
       - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Post image', name: 'image', widget: 'image', required: true }
       - { label: 'Tags', name: 'tags', widget: 'select', multiple: true, options: [
         'JavaScript',
         'TypeScript',
@@ -36,4 +37,4 @@ collections:
         'Misc',
         'Books',
       ] }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: true }
