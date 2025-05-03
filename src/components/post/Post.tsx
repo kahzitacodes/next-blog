@@ -22,16 +22,15 @@ export const Post = (props: PropTypes) => {
 
   return (
     <S.Wrapper {...props}>
-      <Button
-        variant="ghost"
-        onClick={() => router.push('/')}
-        $animate
-        icon="ArrowLeft"
-      >
-        Back
-      </Button>
-
       <S.Heading>
+        <Button
+          variant="ghost"
+          onClick={() => router.push('/')}
+          $animate
+          icon="ArrowLeft"
+        >
+          Back
+        </Button>
         <S.PostTitle>{title}</S.PostTitle>
 
         <div className="flex flex-col gap-4 md:flex-row md:justify-between">
