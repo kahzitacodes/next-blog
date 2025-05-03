@@ -18,11 +18,11 @@ export const PostCard: React.FC<PropTypes> = (props) => {
 
   return (
     <S.PostContainer $isMain={$isMain}>
-      <S.PostImageContainer href={postLink}>
+      <S.PostImageContainer href={postLink} $isMain={$isMain}>
         <S.PostImage src={image} fill alt={title} priority />
       </S.PostImageContainer>
 
-      <S.PostContent>
+      <S.PostContent $isMain={$isMain}>
         {tags ? (
           <S.TagsWrap aria-label="tags">
             {tags.map((tag) => (

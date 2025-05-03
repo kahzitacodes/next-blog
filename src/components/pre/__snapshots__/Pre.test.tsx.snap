@@ -2,16 +2,16 @@
 
 exports[`<Pre /> should render successfully 1`] = `
 <div
-  class="text-md my-6 overflow-x-auto rounded-lg bg-zinc-900"
+  class="text-md w-full my-6 overflow-x-auto rounded-lg bg-zinc-900"
   data-testid="pre"
 >
   <div
-    class="flex w-full justify-between rounded-t-lg border-zinc-950 border-b text-zinc-500 px-3 py-2"
+    class="flex w-full justify-between rounded-t-lg border-zinc-950 border-b text-zinc-500 px-6 py-3"
   >
-    shell
+    shel
   </div>
   <pre
-    class="p-6 overflow-x-auto text-base [&>code]:bg-transparent bg-zinc-800"
+    class="p-4 overflow-x-auto text-base [&>code]:bg-transparent bg-zinc-800"
   >
     <h1>
       Title

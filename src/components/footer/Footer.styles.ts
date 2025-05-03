@@ -12,6 +12,7 @@ export const Content = tw.div`
   flex
   w-full
   justify-between
+  gap-2
   pb-10
 `
 export const Section = tw.section`

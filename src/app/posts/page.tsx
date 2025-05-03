@@ -12,7 +12,10 @@ type PropTypes = {
 export function generateMetadata({
   searchParams: { page }
 }: PropTypes): Metadata {
-  const { posts } = PostService.getAll({ currentPage: Number(page) })
+  const currentPage = Number(page) || 1
+
+  const { posts } = PostService.getAll({ currentPage: currentPage })
+
   if (!posts.length) {
     return {
       title: 'There are no posts'
@@ -20,28 +23,30 @@ export function generateMetadata({
   }
 
   return {
-    title: `Posts | Page ${page || 1}`,
+    title: `Posts | Page ${currentPage}`,
     metadataBase: new URL(siteConfig.url),
     openGraph: {
       type: 'website',
       url: `${siteConfig.url}?page=${page}`,
-      title: `Posts | Page ${page || 1}`,
-      description: `Posts | Page ${page || 1}`,
+      title: `Posts | Page ${currentPage}`,
+      description: `Posts | Page ${currentPage}`,
       siteName: siteConfig.name,
       images: [{ url: `${siteConfig.url}${posts[0].$frontMatter.image}` }]
     },
     twitter: {
       card: 'summary_large_image',
-      title: `Posts | Page ${page || 1}`,
-      description: `Posts | Page ${page || 1}`,
+      title: `Posts | Page ${currentPage}`,
+      description: `Posts | Page ${currentPage}`,
       images: [`${siteConfig.url}${posts[0].$frontMatter.image}`]
     }
   }
 }
 
 export default function Posts({ searchParams: { page } }: PropTypes) {
+  const currentPage = Number(page) || 1
+
   const { posts, totalPages } = PostService.getAll({
-    currentPage: Number(page) || 1
+    currentPage: currentPage
   })
 
   const profile = {
@@ -53,7 +58,7 @@ export default function Posts({ searchParams: { page } }: PropTypes) {
     <main className="flex min-h-screen flex-col gap-8">
       <Profile {...profile} />
       <PostList posts={posts} />
-      <Pagination currentPage={Number(page)} totalPages={totalPages} />
+      <Pagination currentPage={currentPage} totalPages={totalPages} />
     </main>
   )
 }
