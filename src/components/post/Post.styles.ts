@@ -3,35 +3,54 @@ import tw from 'tailwind-styled-components'
 export const Wrapper = tw.div`
   flex
   flex-col
-  gap-4
+  gap-6
+  md:gap-8
+  w-full
 `
 
 export const ImageContainer = tw.div`
   relative
-  h-96
+  h-56
+  sm:h-72
+  md:h-96
   w-full
-  sm:h[30rem]
+`
+
+export const Heading = tw.div`
+  w-full
 `
 
 export const Content = tw.div`
+  mx-auto
   w-full
-  max-w-5xl
+  md:max-w-[920px]
 `
 
-export const PostDetails = tw.p`
-  mb-4
+export const PostDetails = tw.div`
+  flex
   text-gray-400
+  text-sm
+  gap-3
 `
 
 export const PostTitle = tw.h1`
-  mb-4
-  text-5xl
+  mb-6
+  text-3xl
+  sm:text-4xl
   font-bold
-  sm:text-6xl
+  leading-tight
+
+  md:text-6xl
 `
 
 export const PostDescription = tw.p`
   mb-8
-  text-2xl
+  text-xl
   text-gray-400
+`
+
+export const TagsWrap = tw.ul`
+  flex
+  flex-wrap
+  gap-2
 `

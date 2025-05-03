@@ -4,11 +4,12 @@ import { useRouter } from 'next/navigation'
 
 import { formatDate } from '@/utils/helpers'
 
-import { Mdx } from '@/components'
+import { Icon, Mdx } from '@/components'
 import { Button } from '../button'
 
 import { PropTypes } from './Post.types'
 import * as S from './Post.styles'
+import { Tag } from '../tag'
 
 export const Post = (props: PropTypes) => {
   const router = useRouter()
@@ -16,7 +17,7 @@ export const Post = (props: PropTypes) => {
   const {
     body,
     $readingTime,
-    $frontMatter: { date, description, image, title }
+    $frontMatter: { date, description, image, title, tags }
   } = props
 
   return (
@@ -30,6 +31,30 @@ export const Post = (props: PropTypes) => {
         Back
       </Button>
 
+      <S.Heading>
+        <S.PostTitle>{title}</S.PostTitle>
+
+        <div className="flex flex-col gap-4 md:flex-row md:justify-between">
+          {tags ? (
+            <S.TagsWrap aria-label="tags">
+              {tags.map((tag) => (
+                <li key={tag}>
+                  <Tag label={tag} />
+                </li>
+              ))}
+            </S.TagsWrap>
+          ) : null}
+
+          <S.PostDetails>
+            <span className="flex items-center gap-2">
+              <Icon name="Clock" size={20} /> {$readingTime.toString()} min
+            </span>
+            <span>•</span>
+            {formatDate(date)}{' '}
+          </S.PostDetails>
+        </div>
+      </S.Heading>
+
       <S.ImageContainer>
         <Image
           src={image}
@@ -41,14 +66,7 @@ export const Post = (props: PropTypes) => {
       </S.ImageContainer>
 
       <S.Content>
-        <S.PostDetails>
-          {formatDate(date)} • {$readingTime.toString()} minuto
-          {$readingTime <= 1 ? '' : 's'} de leitura
-        </S.PostDetails>
-
-        <S.PostTitle>{title}</S.PostTitle>
         <S.PostDescription>{description}</S.PostDescription>
-
         <Mdx code={body.code} />
       </S.Content>
     </S.Wrapper>

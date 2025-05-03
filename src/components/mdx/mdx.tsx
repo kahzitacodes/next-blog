@@ -4,9 +4,27 @@ import { Pre } from '@/components/pre'
 
 const components: MDXComponents = {
   h1: ({ className = '', children, ...remainingProps }) => (
-    <h1 className={`text-5xl font-semibold ${className}`} {...remainingProps}>
+    <h1 className={`text-4xl font-semibold ${className}`} {...remainingProps}>
       {children}
     </h1>
+  ),
+
+  h2: ({ className = '', children, ...remainingProps }) => (
+    <h2
+      className={`my-4 text-2xl font-semibold md:text-3xl ${className}`}
+      {...remainingProps}
+    >
+      {children}
+    </h2>
+  ),
+
+  h3: ({ className = '', children, ...remainingProps }) => (
+    <h3
+      className={`my-3 text-xl font-semibold md:text-2xl ${className}`}
+      {...remainingProps}
+    >
+      {children}
+    </h3>
   ),
 
   pre: ({ className = '', children }) => (
@@ -15,7 +33,7 @@ const components: MDXComponents = {
 
   code: ({ className = '', children, ...remainingProps }) => (
     <code
-      className={`text-md relative rounded bg-slate-700 px-1 py-0.5 text-indigo-400 ${className}`}
+      className={`text-md relative rounded bg-zinc-800 px-1 py-0.5 text-pink-400 ${className}`}
       {...remainingProps}
     >
       {children}

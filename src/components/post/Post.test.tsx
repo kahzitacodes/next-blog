@@ -19,12 +19,12 @@ describe('<Post />', () => {
     render(<Post {...postMock} />)
 
     const formattedDate = formatDate(postMock.$frontMatter.date)
-    const minuteText = postMock.$readingTime <= 1 ? 'minuto' : 'minutos'
-    const dateAndReadingTime = `${formattedDate} • ${postMock.$readingTime.toString()} ${minuteText} de leitura`
+    const readingTime = `${postMock.$readingTime.toString()} min`
 
     expect(screen.getByRole('button', { name: /back/i })).toBeInTheDocument()
     expect(screen.getByAltText(postMock.$frontMatter.title)).toBeInTheDocument()
-    expect(screen.getByText(dateAndReadingTime)).toBeInTheDocument()
+    expect(screen.getByText(formattedDate)).toBeInTheDocument()
+    expect(screen.getByText(readingTime)).toBeInTheDocument()
 
     expect(
       screen.getByRole('heading', { name: postMock.$frontMatter.title })
