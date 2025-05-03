@@ -17,7 +17,9 @@ export const ImageContainer = tw.div`
 `
 
 export const Heading = tw.div`
+  mx-auto
   w-full
+  md:max-w-[920px]
 `
 
 export const Content = tw.div`

@@ -15,6 +15,18 @@ const config: Config = {
     {
       pattern: /^gap-/,
       variants: ['xs', 'sm', 'md', 'lg', 'xl', 'xxl']
+    },
+    {
+      pattern: /^bg-/,
+      variants: ['blue', 'violet', 'yellow']
+    },
+    {
+      pattern: /^text-/,
+      variants: ['blue', 'violet', 'yellow']
+    },
+    {
+      pattern: /^border-/,
+      variants: ['blue', 'violet', 'yellow']
     }
   ],
   theme: {

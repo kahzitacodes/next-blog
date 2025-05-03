@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Note /> should render default note with right the style 1`] = `
+<div
+  class="flex rounded-md gap-3 p-3 my-6 border bg-blue-800/20 text-blue-400 border-blue-900"
+  data-testid="note-test"
+  datatestid="note-test"
+  type="note"
+>
+  <span
+    class="mt-0.5"
+  >
+    <svg
+      class="lucide lucide-file-text"
+      data-testid="FileText"
+      fill="none"
+      height="20"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+      />
+      <path
+        d="M14 2v4a2 2 0 0 0 2 2h4"
+      />
+      <path
+        d="M10 9H8"
+      />
+      <path
+        d="M16 13H8"
+      />
+      <path
+        d="M16 17H8"
+      />
+    </svg>
+  </span>
+  <div
+    class="flex flex-col gap-1"
+  >
+    <h4
+      class="font-semibold"
+    >
+      Note
+    </h4>
+    <div
+      class="text-zinc-300"
+    >
+      My notes
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Note /> should render successfully 1`] = `
+<div
+  class="flex rounded-md gap-3 p-3 my-6 border bg-blue-800/20 text-blue-400 border-blue-900"
+  data-testid="note-test"
+  datatestid="note-test"
+  type="note"
+>
+  <span
+    class="mt-0.5"
+  >
+    <svg
+      class="lucide lucide-file-text"
+      data-testid="FileText"
+      fill="none"
+      height="20"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"
+      />
+      <path
+        d="M14 2v4a2 2 0 0 0 2 2h4"
+      />
+      <path
+        d="M10 9H8"
+      />
+      <path
+        d="M16 13H8"
+      />
+      <path
+        d="M16 17H8"
+      />
+    </svg>
+  </span>
+  <div
+    class="flex flex-col gap-1"
+  >
+    <h4
+      class="font-semibold"
+    >
+      Note
+    </h4>
+    <div
+      class="text-zinc-300"
+    >
+      My notes
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Note /> should render tip note with right the style 1`] = `
+<div
+  class="flex rounded-md gap-3 p-3 my-6 border bg-violet-800/20 text-violet-400 border-violet-900"
+  data-testid="note-test-tip"
+  datatestid="note-test-tip"
+  type="tip"
+>
+  <span
+    class="mt-0.5"
+  >
+    <svg
+      class="lucide lucide-lightbulb"
+      data-testid="Lightbulb"
+      fill="none"
+      height="20"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"
+      />
+      <path
+        d="M9 18h6"
+      />
+      <path
+        d="M10 22h4"
+      />
+    </svg>
+  </span>
+  <div
+    class="flex flex-col gap-1"
+  >
+    <h4
+      class="font-semibold"
+    >
+      Tip
+    </h4>
+    <div
+      class="text-zinc-300"
+    >
+      My notes
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Note /> should render warning note with right the style 1`] = `
+<div
+  class="flex rounded-md gap-3 p-3 my-6 border bg-yellow-800/20 text-yellow-400 border-yellow-900"
+  data-testid="note-test-warning"
+  datatestid="note-test-warning"
+  type="warning"
+>
+  <span
+    class="mt-0.5"
+  >
+    <svg
+      class="lucide lucide-triangle-alert"
+      data-testid="AlertTriangle"
+      fill="none"
+      height="20"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
+      />
+      <path
+        d="M12 9v4"
+      />
+      <path
+        d="M12 17h.01"
+      />
+    </svg>
+  </span>
+  <div
+    class="flex flex-col gap-1"
+  >
+    <h4
+      class="font-semibold"
+    >
+      Warning
+    </h4>
+    <div
+      class="text-zinc-300"
+    >
+      My notes
+    </div>
+  </div>
+</div>
+`;
