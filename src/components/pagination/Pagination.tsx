@@ -19,7 +19,6 @@ export const Pagination = (props: PropTypes) => {
 
   const isFirst = currentPage === 1
   const isLast = currentPage === totalPages
-  console.log(totalPages)
 
   return (
     <S.Wrapper data-testid={dataTestId} {...remainingProps}>
